@@ -8,7 +8,11 @@ import '@/assets/scss/styles.scss';
 Vue.config.productionTip = false
 
 new Vue({
-    router,
-    store,
+  router,
+  store,
   render: h => h(App)
 }).$mount('#app')
+
+var c = new Croppie(document.getElementById('item'), opts);
+// call a method
+c.method(args);
